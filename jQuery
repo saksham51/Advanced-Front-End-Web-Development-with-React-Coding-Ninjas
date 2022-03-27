@@ -1,0 +1,73 @@
+A)What is JQuery?
+ANSWER:
+a JavaScript library 
+
+B)Why do we need to use Jquery?
+ANSWER:
+This problem may have one or more correct answers
+Accelerate speed of development 
+More work in less code 
+Provides some easy set of functions 
+
+C)Which sign does jQuery use as a shortcut for jQuery?
+ANSWER:
+'$' sign 
+
+D)Jquery uses CSS selectors to select elements?
+ANSWER:
+True 
+
+E)With jQuery, look at the following selector: $("div.intro"). What does it select?
+ANSWER:all div elements with class="intro"
+
+F)Which of the following will hide all elements with class 'hide'?
+info
+ANSWER:
+$(".hide").hide(); 
+
+G)Which of the following will add a 'red' background color to the body?
+ANSWER:
+$("body").css("background-color", "red"); 
+
+H)Which method is present in JQuery that occurs after the DOM is loaded?
+ANSWER:
+ready() 
+
+I)Which method is used to set a click event on a button?
+ANSWER:
+$("button").click(function() {}) 
+
+J)Which of the following method sets the value of the input tag?
+$("button").click( function() {
+    $("input:text").____________;
+});
+ANSWER:
+val("HeHeHe") 
+
+K)Which of the following statement will fetch you a div element with id 'questionnaire'?
+ANSWER:
+$("#questionnaire"); 
+
+L)What does the $('div span') return?
+ANSWER:
+All the span elements inside the div element 
+
+M)Which method is used to get the content i.e. HTML of the div element with id 'courses'?
+ANSWER:
+$("#courses").html(); 
+
+N)Which of the following will get you a red underlined text to all the text having class 'red-un'?
+ANSWER:
+$(".red-un").css({"color": "red", "text-decoration": "underline"}); 
+
+O)Which method in JQuery removes the selected elements from HTML?
+ANSWER:
+remove() 
+
+P)Which method in JQuery is used to add 'prev' and 'blue' class to an element?
+ANSWER:
+addClass("prev blue"); 
+
+Q)Which method is used to add/remove 'news' class from a h1 element?
+ANSWER:
+$("h1").toggleClass("news"); 
