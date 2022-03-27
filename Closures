@@ -1,0 +1,325 @@
+A)What will the following code print in the console?
+var a =10;
+function foo(){
+var a = 20;
+console.log(a);
+console.log(window.a);    
+}
+console.log(a);
+window.foo();
+ANSWER:10 20 10
+
+B)What will the following code print in the console?
+function foo(a){
+a = 20;
+console.log(a);
+}
+foo(10);    
+console.log(a);
+ANSWER:
+20 Error: a is not defined
+
+C)Consider the following code snippet.
+var a = 10;
+console.log(a);
+var a =20;
+console.log(a);
+What will be the expected output?
+ANSWER:10 20
+
+D)What will the following code print in console?
+var a =10;
+var b;
+function outer(){
+    var b = 30;
+    function inner(a){
+        var a = 30;
+        console.log(a++ ,b++)
+        }
+        console.log(a, ++b);
+        inner(a);
+}
+outer();
+console.log(a++,b++);
+
+
+i.    20 31
+      30 31
+      10
+ii.   20 30
+      30 30
+      10
+iii.  30 20 
+      30 30
+      10
+iv.   10
+      20 31
+      30 31
+ v.   10 31
+      30 31
+      10 NaN
+ vi.  None of the Above
+ANSWER:v)
+
+E)What will the following code print in console?
+var a =10;
+function outer(){
+    var a = 20;
+    var b = 30;
+    function inner(a){
+        var a = 30;
+        console.log(a++ ,b++)
+        }
+    console.log(a, ++b);
+    inner(a);
+}
+outer();
+console.log(a++);
+
+
+
+i.    20 31
+      30 31
+      10
+ii.   20 30
+      30 30
+      10
+iii.  30 20 
+      30 30
+      10
+iv.   10
+      20 31
+      30 31
+ v.   10 31
+      30 31
+      10 NaN
+ vi.  None of the Above
+ANSWER:i)
+
+F)What is the expected output?
+Where this is the HTML code
+
+<html>
+
+<body>
+
+<script src="script1.js"></script>
+
+<script src="script2.js"></script>
+
+</body>
+
+</html>
+
+This is script1.
+
+var a = 10;
+setTimeout(function(){
+console.log(a);
+},1000);
+This is script2.
+
+var a = 20;
+console.log(a);
+ANSWER:20 20
+
+G)What will the following statements print in the console?
+var a = (function(){
+    return typeof arguments;
+ })();
+ console.log(a);
+ANSWER:object
+
+H)What kind of scoping does JavaScript use?
+ANSWER:Lexical
+
+I)What will the following code snippet print?
+function Adder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+var add5 = Adder(5);
+var add10 = Adder(10);
+console.log(add5(2));
+console.log(add10(2));
+ANSWER:7 12
+
+J)What is the expected output?
+var add = (function ( ) {
+  var counter = 0;
+  return function ( ) {
+       counter += 1; 
+       return counter;
+}
+})();    
+console.log(add());
+console.log(add());
+console.log(add());
+ANSWER:1 2 3
+
+K)What will the following code print in console?
+for(var a = 1; a < 5; a++){
+setTimeout(function(){
+console.log(a)}, 1000);
+}
+ANSWER:5 5 5 5
+
+L)What will the following code print in console?
+for(let a = 1; a < 5; a++){
+    setTimeout(function(){
+    console.log(a)}, 1000);
+}
+ANSWER:1 2 3 4
+
+M)Is the following function declaration allowed in JavaScript?
+var func = (
+  a,
+  b,
+  c
+) => (
+  1
+);
+ANSWER:Yes
+
+N)What will the expected output when we run the following code in the console?
+console.log((function(x, f = () => x) {
+  var x;
+  var y = x;
+  x = 2;
+  return [x, y, f()];
+})(1));
+ANSWER:2, 1, 1
+
+O)What will the following code print in the console?
+let user = {
+   firstname: 'John',
+   lastname: 'Doe',
+   getFullName: function(){
+       return function(){
+           console.log(`The full name of the user is ${this.firstname} ${this.lastname} `);
+       }
+   }    
+}
+user.getFullName()();
+
+ANSWER:
+The full name of the user is undefined undefined 
+
+P)What will the following code print in the console?
+let user = {
+   firstname: 'John',
+   lastname: 'Doe',
+   getFullName: function(){
+       return() => {
+           console.log(`The full name of the user is ${this.firstname} ${this.lastname} `);
+       }
+   }    
+}
+user.getFullName()();
+
+ANSWER:
+The full name of the user is John Doe 
+
+Q)What is the expected output?
+{
+  let message = "Hello";
+  console.log(message); 
+}
+console.log(message);
+
+ANSWER:
+Hello Error: message is not defined 
+
+R)What is the expected output if we run the following code in console?
+function makeCounter() {
+  let count = 0;
+  return function() {
+    return count++;
+  };
+}
+let counter1 = makeCounter();
+let counter2 = makeCounter();
+console.log( counter1() ); 
+console.log( counter1() ); 
+console.log( counter2() ); 
+ANSWER:0 1 0
+
+S)What is the expected output?
+function makeArmy() {
+  let shooters = [];
+  let i = 0;
+  while (i < 10) {
+    let shooter = function() {
+      console.log( i ); 
+    };
+    shooters.push(shooter);
+    i++;
+  }
+  return shooters;
+}
+let army = makeArmy();
+army[0]();
+army[5]();
+ANSWER:10 10
+
+T)What is the expected output?
+function makeArmy() {
+  let shooters = [];
+  for(let i = 0; i < 10; i++) {
+    let shooter = function() {
+      console.log( i );
+    };
+    shooters.push(shooter);
+  }
+  return shooters;    
+}
+let army = makeArmy();
+army[0]();
+army[5]();
+ANSWER:0 5
+
+U)What will the following code snippet print in console?
+var Sequence = (function sequenceIIFE() {
+    var current = 0;
+    return {
+        getCurrentValue: function() {
+            return current;
+        },  
+        getNextValue: function() {
+            current = current + 1;
+            return current;
+        }
+   };
+}());
+console.log(Sequence.getNextValue());
+console.log(Sequence.getNextValue());
+console.log(Sequence.getCurrentValue());
+ANSWER:1 2 2
+
+V)What will the following code print in the console?
+let People = function(person, age) { 
+        this.person = person; 
+        this.age = age; 
+        this.info = function() { 
+            console.log(this);  
+           setTimeout(() => {  
+            console.log(this.person + " is " + this.age + " years old"); 
+           }, 3000); 
+        } 
+    }  
+let person1 = new People('John', 21); 
+person1.info();
+ANSWER:
+People {person: "John", age: 21, info: ƒ} John is 21 years old
+
+W)What will the following function return?
+var arguments = [1, 2, 3];
+var arr = () => arguments[2];
+arr();
+function foo(n) {
+  var f = () => arguments[0] + n; 
+  return f();
+}
+foo(3); 
+ANSWER:6
