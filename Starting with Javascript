@@ -1,0 +1,168 @@
+A)What can we achieve using Javascript?
+ANSWER:
+Add interaction on web page 
+Change HTML content on certain event conditions 
+Handle events on buttons and inputs 
+B)What was the initial name for Javascript?
+ANSWER:Mocha
+C)When was ECMAscript officially released?
+ANSWER:1997
+D)Which of the following are basic data types in Javascript?
+ANSWER:
+number 
+null 
+string 
+undefined 
+object 
+E)How can you declare an integer?
+ANSWER:var a=10;
+F)Find out that if any of the lines below will produce an error on execution?
+ A) var a = 10;
+ B) console.log(a)
+ C) a = " 'Coding Ninjas' ";
+ D) console.log(a);
+ANSWER:No Error
+G)What will be printed on the console from the following code -
+var a;
+console.log(a);
+ANSWER:undefined
+H)What will be printed on the console from the following code -
+var a = "A";
+console.log(65 - a);
+ANSWER:NaN
+I)What will the below statement print on the console?
+typeof("-1")
+ANSWER:"string"
+J)What is the below line print on the console?
+var a = null
+typeof(a)
+ANSWER:"object"
+K)What will be output of the statement given below?
+console.log(20 + 12 * 2 - 10 / 2)
+ANSWER:39
+L)console.log(1 + '1')
+ANSWER:11
+M)What will the below line print on the console?
+var a;
+console.log(a + "b");
+ANSWER:undefinedb
+N)What will the below line print on the console?
+console.log(1 - '1')
+ANSWER:0
+O)What will be the output for the below comparison in Javascript?
+"1" == 1
+ANSWER:true
+P)What will be the output for the below comparison in Javascript?
+null == undefined
+ANSWER:true
+Q)What will the below code produce on the console?
+if( -1 ) {
+    console.log("true")
+}
+else {
+    console.log("false")
+}
+ANSWER:true
+R)  What will the below code produce on the console?
+   if( "" ) {
+    console.log("true")
+   }
+   else {
+    console.log("false")
+    }
+ANSWER:false
+S)Which of the following 'for' loops would not produce any error?
+
+
+  A) for(var i=0; i<5; ++i) { 
+      console.log("Hello") ; 
+   }
+
+  B) var i , j ;    
+   for(i=0, j = 10; i < 10, j < 100;) {
+   console.log("Hello"); 
+   }
+
+  C) var i ;    
+   for(i=0; i<5) { 
+     console.log("Hello");  
+   }
+
+  D) var i , j ;    
+   for(i=0, j=10; i<5; ++i) { 
+      console.log("Hello"); 
+   }
+ ANSWER:A)
+        D)
+ T)Which of the following statements will print 'hii' at least once?
+
+
+    A) var i=10 ; 
+   do { 
+       console.log("hii"); 
+     } while(i<5);
+
+   B) var i=0 ;     
+   while(i<5); { 
+      console.log("hii"); 
+      ++i ; 
+   }
+
+    C) for(i=0, j=10; i<5; ++i) { 
+       if(i<5)
+         break; 
+       console.log("hii"); 
+   }
+
+   D) var i=0 ;     
+   while(i<5) { 
+      console.log("hii"); 
+      ++i; 
+    }
+ ANSWER:A)
+        D)
+U)What all is possible using Javascript?
+ANSWER:
+Add styles to the web page
+Add pop ups to the web page 
+Add animation to web page 
+Add HTML code to web page 
+Add click events to web page 
+
+V)Which of the following will display an alert box on web page?
+ANSWER:both of the above
+
+W)What will be printed on the console from the following code -
+var a = 10/0;
+console.log(a);
+ANSWER:Infinity
+
+X)What will be the output of the following statements on console?
+console.log(null == undefined);
+console.log(typeof(null) == typeof(undefined));
+ANSWER:true false
+
+Y)What will be printed by the JS code below?
+console.log(65 + "H")
+ANSWER:65H
+
+Z)What will the output shown on console from the following code?
+null === undefined
+ANSWER:false
+
+AA)What will the below statement print on the console?
+typeof( typeof( typeof( 100 ) ) )
+ANSWER:"string"
+
+AB)What will the below code produce on the console?
+var a;
+if( typeof(a) ) {
+    console.log("true")
+}
+else {
+    console.log("false")
+}
+ANSWER:true
+
+        
+        
