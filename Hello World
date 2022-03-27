@@ -1,0 +1,11 @@
+A)What does Babel do?
+ANSWER: Compiles JSX into Javascript 
+
+B)Is JSX necessary to work with React?
+ANSWER: False 
+
+C)How do you call a function fetch() in JSX?
+ANSWER: {fetch()}
+
+D)Which of the following can be used to check if a user is logged in or not?
+ANSWER:<div>{loggedIn ? username : 'Hello World'}</div> 
