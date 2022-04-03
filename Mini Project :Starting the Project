@@ -1,0 +1,7 @@
+A)How do you write an inline style specifying the font-size:10px and color:blue in JSX?
+Answer:
+style={{fontSize:10, color:'blue'}} 
+
+B)Which of the following is the correct syntax for adding a click event handler, foo, to a button?
+Answer:
+<button onClick={this.foo}> 
