@@ -1,0 +1,19 @@
+A)Which hook is analogous to react’s class lifecycle method componentDidMount?
+Answer:
+useEffect( ( ) => { }, [ ] ) 
+
+B)What’s wrong with the code
+
+Class Button {
+    render () {
+        const [text, setText] = useState(‘’);
+        return <button>{text}</button>
+    }
+ }
+ Answer:
+ Can't use hooks inside a class
+ 
+ C)Can we use the same hook multiple times in a function?
+ Answer: true
+ 
+ 
